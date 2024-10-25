@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import utility.Constants;
+import static utility.Constants.*;
 
 public class AmazonWishList {
 	
@@ -21,7 +21,7 @@ public class AmazonWishList {
 	public void launchApp() throws Exception {
 		
 		driver = new ChromeDriver();
-		driver.get(Constants.amazonApp); //https://www.amazon.in/
+		driver.get(amazonApp); //https://www.amazon.in/
 		
 		driver.manage().window().maximize();
 		Thread.sleep(3000);

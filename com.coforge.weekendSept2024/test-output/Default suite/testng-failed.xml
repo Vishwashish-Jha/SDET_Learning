@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="filUploadExample.FileDownloadExample1">
+      <class name="controlExample.HandleAlertExample">
         <methods>
-          <include name="fileUploadTest"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+          <include name="PromptAlert"/>
         </methods>
-      </class> <!-- filUploadExample.FileDownloadExample1 -->
+      </class> <!-- controlExample.HandleAlertExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
