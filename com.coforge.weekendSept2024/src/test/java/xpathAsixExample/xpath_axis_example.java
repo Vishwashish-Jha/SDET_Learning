@@ -7,14 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class xpath_axis_example {
 
 	@Test
 	public void XPATHAsix() throws Exception {
 
-		WebDriverManager.chromedriver().setup();
+		
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
