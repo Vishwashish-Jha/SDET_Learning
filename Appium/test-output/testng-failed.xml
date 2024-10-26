@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="realDevice.RD_CalculatorTest">
+      <class name="realDevice.RD_CalculatorTest2">
         <methods>
           <include name="verifyAddTest"/>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- realDevice.RD_CalculatorTest -->
+      </class> <!-- realDevice.RD_CalculatorTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
