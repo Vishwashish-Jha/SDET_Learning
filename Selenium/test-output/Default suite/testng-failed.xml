@@ -5,7 +5,7 @@
     <classes>
       <class name="execution.TestRun">
         <methods>
-          <include name="login"/>
+          <include name="addElement"/>
           <include name="CloseBrowser"/>
           <include name="launchBrowser"/>
         </methods>

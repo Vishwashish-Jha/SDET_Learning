@@ -5,16 +5,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
-import utility.BaseClass;
+import utility.BaseClassParameters;
 import utility.ReadConfig;
 
-//public class TestRun extends BaseClassParameters {
-public class TestRun extends BaseClass {
+public class TestRunHomePage extends BaseClassParameters {
+//public class TestRunHomePage extends BaseClass {
 	
 	
 	
 	ReadConfig rg = new ReadConfig();
-	public TestRun() throws Exception {
+	public TestRunHomePage() throws Exception {
 		super();
 		
 	}
@@ -22,7 +22,7 @@ public class TestRun extends BaseClass {
 	
 	
 //	@Test(retryAnalyzer = listener.RetryTest.class)
-	@Test
+	@Test(priority = -1)
 	public void login() throws Exception {
 		
 		
@@ -48,5 +48,6 @@ public class TestRun extends BaseClass {
 		
 		
 	}
-
+	
+	
 }
