@@ -1,9 +1,12 @@
 package pageObjects;
 
+import static utility.CustomMethods.clickUsingJS;
+import static utility.CustomMethods.initializeCusotmMethodsDriver;
+import static utility.CustomMethods.sendKeysUsingJS;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class HomePage {
 	
@@ -19,11 +22,13 @@ public class HomePage {
 	
 	
 	
-	
-	public HomePage(WebDriver driver) {
+
+	public HomePage(WebDriver driver) throws Exception {
 
 		this.driver=driver;	
-		js = (JavascriptExecutor)driver;
+		initializeCusotmMethodsDriver(driver);
+		System.out.println(driver + "In Home Page ********************************************");
+		
 	
 	}
 	
@@ -71,16 +76,6 @@ public class HomePage {
 
 	}
 
-	public void sendKeysUsingJS (WebElement element ,String text) {
-		
-		js.executeScript("arguments[0].value=arguments[1]", element,text);
-		
-	}
 	
-	public void clickUsingJS (WebElement element) throws Exception {
-		
-		Thread.sleep(2000);
-		js.executeScript("arguments[0].click()", element);
-		
-	}
+	
 }

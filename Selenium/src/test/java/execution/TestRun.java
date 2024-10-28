@@ -5,11 +5,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
-import utility.BaseClassParameters;
+import utility.BaseClass;
 import utility.ReadConfig;
 
-public class TestRun extends BaseClassParameters {
-//public class TestRun extends BaseClass {
+//public class TestRun extends BaseClassParameters {
+public class TestRun extends BaseClass {
 	
 	
 	
@@ -40,7 +40,7 @@ public class TestRun extends BaseClassParameters {
 		String ExpText = "Thanks for submitting the form";
 		
 		System.out.println("Text Received :"+ ActText);
-		Assert.assertTrue(!ActText.contains(ExpText));
+		Assert.assertTrue(ActText.contains(ExpText));
 		
 		hp.closePopup();
 		Thread.sleep(2000);
